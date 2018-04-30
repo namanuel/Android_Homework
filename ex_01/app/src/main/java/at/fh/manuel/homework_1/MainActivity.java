@@ -71,10 +71,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void calculate(){
-        int zahl1 = Integer.parseInt("0" + input_zahl1.getText().toString());
-        int zahl2 = Integer.parseInt("0" + input_zahl2.getText().toString());
+        try {
+            int zahl1 = Integer.parseInt("0" + input_zahl1.getText().toString());
+            int zahl2 = Integer.parseInt("0" + input_zahl2.getText().toString());
 
-        summe = zahl1 + zahl2;
+            summe = zahl1 + zahl2;
+        }catch (Exception e){
+            Toast.makeText(this, "invalid Number", Toast.LENGTH_SHORT).show();
+            e.printStackTrace();
+        }
     }
     public void sendMessage(View view) {
         // Do something in response to button
