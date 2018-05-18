@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BSA Homework 01</string>
+    <string name="navigagteTextView">0</string>
+    <string name="seekerValue">0</string>
+    <string name="name">Manuel Nagel</string>
+    <string name="number1">0</string>
+    <string name="number2">0</string>
+    <string name="ergebnis">0</string>
+    <string name="navigate">Navigate</string>
+    <string name="calculate">Calculate</string>
+</resources>
