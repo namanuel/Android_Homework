@@ -41,12 +41,14 @@ public class MainActivity extends AppCompatActivity {
         mReloadButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Beim BUTTON click das Textview leer setzen!!!!°
                 loadWebResult();
             }
         });
     }
     private void loadWebResult(){
         try{
+            //URL VON DEINEM VITALSERVER MIT PORT reinschreiben (z.b. 10.0.0.25:8080)
             URL url = new URL("https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:OEFFHALTESTOGD&srsName=EPSG:4326&outputFormat=json");
 //            String content = getResponseFromHttpURL(url);
 //            mResultTextView.setText(content);
@@ -84,6 +86,8 @@ public class MainActivity extends AppCompatActivity {
             URL url = urls[0];
             String resultString = null;
             try{
+
+                //wir brauchen kein JsonObject sondern nur ein Array weil wir nur arrays bekommen, somit nur mit dem Array arbeiten und das dann in jsonobjects zerstückeln
                 resultString = getResponseFromHttpURL(url);
                 JSONObject jsonRoot  = new JSONObject(resultString);
                 JSONArray features = jsonRoot.getJSONArray("features");

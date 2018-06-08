@@ -19,6 +19,10 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -49,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
     }
     private void loadWebResult(){
         try{//IPADRESSE ÄNDERN!!!!!!!!!!!
-            URL url = new URL("http://192.168.43.183:8888/rest/items/vital_data/history");
+            URL url = new URL("http://10.202.234.84:8888/rest/items/vital_data/history");
 //            String content = getResponseFromHttpURL(url);
 //            mResultTextView.setText(content);
             new loadWebContentTask().execute(url);
@@ -80,43 +84,56 @@ public class MainActivity extends AppCompatActivity {
             urlConnection.disconnect();
         }
     }
-    private class loadWebContentTask extends AsyncTask<URL, Void, List<String>> {
+    private class loadWebContentTask extends AsyncTask<URL, Void, List<VitalData>> {
         @Override
-        protected List<String> doInBackground(URL... urls) {
+        protected List<VitalData> doInBackground(URL... urls) {
             URL url = urls[0];
+            List<VitalData> vital_data_list = new ArrayList<>();
             String resultString = null;
             try{
                 resultString = getResponseFromHttpURL(url);
                 JSONArray jsonRoot  = new JSONArray(resultString);
+                DateFormat json_date = new SimpleDateFormat("yyy-MM-dd_HH:mm");
+
+
+
                 Set<String> vitalSet = new HashSet<>();
                 for(int i =0; i<jsonRoot.length(); i++){
                     JSONObject entry = jsonRoot.getJSONObject(i);
-                    String timestamp = entry.getString("timestamp");
-                    String heart_rate = entry.getString("heart_rate");
-                    String systolic_pressure = entry.getString("systolic_pressure");
-                    String diastolic_pressure = entry.getString("diastolic_pressure");
-                    vitalSet.add(timestamp +"; "+"BP: "+systolic_pressure +"/"+diastolic_pressure+ " HR: " + heart_rate);
+                    VitalData vital_data_temp = new VitalData(json_date.parse(entry.getString("timestamp")),
+                            entry.getInt("diastolic_pressure"), entry.getInt("systolic_pressure"),
+                            entry.getInt("heart_rate"));
+                    vital_data_list.add(vital_data_temp);
                 }
-                List<String> vitalList = new LinkedList<>(vitalSet);
-                Collections.sort(vitalList);
-                Collections.reverse(vitalList);
-                return vitalList;
+                Collections.sort(vital_data_list);
+                return vital_data_list;
 
             }catch (IOException ex){
                 Log.e(LOG_TAG, "IOException", ex);
             }catch(JSONException ex){
                 Log.e(LOG_TAG, "JSONException", ex);
+            } catch (ParseException ex) {
+                Log.e(LOG_TAG, "ParseException", ex);
             }
             return null;
         }
 
         @Override
-        protected void onPostExecute(List<String> result) {
+        protected void onPostExecute(List<VitalData> result) {
             super.onPostExecute(result);
-            if(result== null || result.size() ==0)
+            if(result== null || result.size() ==0) {
                 Toast.makeText(MainActivity.this, "An error occurred.", Toast.LENGTH_SHORT).show();
-            else
-                mResultTextView.setText(TextUtils.join("\n", result));
+            }else {
+                StringBuilder sb_text = new StringBuilder();
+
+                for (VitalData vital_data_temp : result) {
+                    sb_text.append(new SimpleDateFormat("MMM dd, yyyy KK:mm:ss a").format(vital_data_temp.getTimestamp()) +
+                            ": BP: " + vital_data_temp.getDiastolicPressure() + "/" + vital_data_temp.getSystolicPressure() +
+                            ", HR: " + vital_data_temp.getHeartRate() + "\n");
+                }
+
+                mResultTextView.setText(sb_text.toString());
+            }
         }
     }
 }
