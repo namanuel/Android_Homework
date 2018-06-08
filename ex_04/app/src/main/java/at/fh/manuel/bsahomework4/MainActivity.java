@@ -87,13 +87,14 @@ public class    MainActivity extends AppCompatActivity {
         ok_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                if(edittext.getText()== null){
-                    Toast.makeText(MainActivity.this,"Write Todo", Toast.LENGTH_SHORT).show();
-                }else {
+                int porgress = seeker.getProgress();
+                String text_edit = edittext.getText().toString();
+                if(!edittext.getText().toString().equals("")){
                     writeFile();
                     mAdapter.swapData(generateContent());
                     edittext.setText("");
+                }else {
+                    Toast.makeText(MainActivity.this,"Write Todo", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -108,28 +109,6 @@ public class    MainActivity extends AppCompatActivity {
         Collections.sort(data);
         return data;
     }
-    private int seekbar(){
-
-        seeker.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-                // TODO Auto-generated method stub
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-                // TODO Auto-generated method stub
-            }
-
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress,boolean fromUser) {
-                // TODO Auto-generated method stub
-                seek_value =progress;
-            }
-        });
-        return seek_value;
-    }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
@@ -139,7 +118,6 @@ public class    MainActivity extends AppCompatActivity {
     }
     public void writeFile(){
         String text_todo = edittext.getText().toString();
-        int number = seekbar();
         String file_name = "todo_file";
         data.add(text_todo);
         try{
