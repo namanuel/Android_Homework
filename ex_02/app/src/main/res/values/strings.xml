@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">BSA Homework 2</string>
-    <string name="clicker">CLICK COUNTER</string>
-    <string name="navigate">NAVIGATE</string>
-    <string name="textis">The click count is: 0</string>
-    <string name="textwas">The click count was: </string>
-</resources>
