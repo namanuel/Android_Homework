@@ -1,0 +1,107 @@
+-- Merging decision tree log ---
+manifest
+ADDED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml:2:1-21:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\229a303f41942880bcc90e5f213c6704\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\ae438ef054aba8e5f8806713dc4049f0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\da5974fb087e889015fc1f55d5e16ad9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\344485ae2ebb280958b8f5f506f0b31c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\8ebbc82eb91ee9dff7a32dc88ce87360\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\bbef71820eaaef5220f5e426ce98c0ca\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\fb7b0070b9d83b97856301e8f73b89bd\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\de6782492674d932636636a5548ca0c9\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\33127ef8bdd8c8007dede91303d8a96b\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\573791de08a6ac255b954ae3945a736e\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\1857d68d58a75a3e4544203ddc9d04d5\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\5b02f27fcfc51b813ffaafab1c51e812\AndroidManifest.xml:17:1-22:12
+INJECTED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml:2:1-21:12
+	package
+		ADDED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml:3:5-33
+		INJECTED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml
+		INJECTED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml
+		ADDED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml:2:1-21:12
+		INJECTED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml
+		ADDED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml:2:1-21:12
+		INJECTED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml:4:5-66
+	android:name
+		ADDED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml:4:22-64
+application
+ADDED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml:5:5-19:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\ae438ef054aba8e5f8806713dc4049f0\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\ae438ef054aba8e5f8806713dc4049f0\AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml:11:9-40
+activity#at.fh.manuel.ex_03.MainActivity
+ADDED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml:12:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml:16:27-74
+uses-sdk
+INJECTED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml
+INJECTED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\229a303f41942880bcc90e5f213c6704\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\229a303f41942880bcc90e5f213c6704\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\ae438ef054aba8e5f8806713dc4049f0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\ae438ef054aba8e5f8806713dc4049f0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\da5974fb087e889015fc1f55d5e16ad9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\da5974fb087e889015fc1f55d5e16ad9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\344485ae2ebb280958b8f5f506f0b31c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\344485ae2ebb280958b8f5f506f0b31c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\8ebbc82eb91ee9dff7a32dc88ce87360\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\8ebbc82eb91ee9dff7a32dc88ce87360\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\bbef71820eaaef5220f5e426ce98c0ca\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\bbef71820eaaef5220f5e426ce98c0ca\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\fb7b0070b9d83b97856301e8f73b89bd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\fb7b0070b9d83b97856301e8f73b89bd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\de6782492674d932636636a5548ca0c9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\de6782492674d932636636a5548ca0c9\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\33127ef8bdd8c8007dede91303d8a96b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\33127ef8bdd8c8007dede91303d8a96b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\573791de08a6ac255b954ae3945a736e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\573791de08a6ac255b954ae3945a736e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\1857d68d58a75a3e4544203ddc9d04d5\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\1857d68d58a75a3e4544203ddc9d04d5\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\5b02f27fcfc51b813ffaafab1c51e812\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Manuel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\5b02f27fcfc51b813ffaafab1c51e812\AndroidManifest.xml:20:5-44
+INJECTED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml
+INJECTED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml
+		ADDED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml
+		INJECTED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml
+		ADDED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml
+		INJECTED from I:\Java Programmieren\Android_Homework\ex_03\app\src\main\AndroidManifest.xml
