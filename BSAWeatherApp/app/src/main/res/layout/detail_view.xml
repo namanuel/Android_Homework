@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView_Forecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:text="@string/forecast"/>
+
+
+    <TextView
+        android:id="@+id/textView_Date"
+        android:layout_width="wrap_content"
+        android:textSize="21dp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="80dp"
+            android:layout_weight="0.3">
+            <ImageView
+                android:id="@+id/iv_iconDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView_Description"
+            android:paddingTop="33dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView_LabelTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_weight="1"
+                android:text="@string/temperature" />
+            <TextView
+                android:id="@+id/textView_LabelAirPressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:text="@string/airPressure" />
+            <TextView
+                android:id="@+id/textView_LabelHumidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_weight="1"
+                android:text="@string/humidity" />
+            <TextView
+                android:id="@+id/textView_LabelCloud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_weight="1"
+                android:text="@string/cloud" />
+            <TextView
+                android:id="@+id/textView_LabelWindVelocity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_weight="1"
+                android:text="@string/windV" />
+            <TextView
+                android:id="@+id/textView_LabelWindDirection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_weight="1"
+                android:text="@string/windDirection" />
+            <TextView
+                android:id="@+id/textView_LabelRain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_weight="1"
+                android:text="@string/rain" />
+            <TextView
+                android:id="@+id/textView_LabelSnow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_weight="1"
+                android:text="@string/snow" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView_Temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/textView_AirP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/textView_Humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/textView_Cloud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/textView_WindV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/textView_WindD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/textView_Rain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/textView_Snow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

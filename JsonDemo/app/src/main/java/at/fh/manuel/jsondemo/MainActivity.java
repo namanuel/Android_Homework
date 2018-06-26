@@ -19,7 +19,11 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Collections;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
@@ -27,6 +31,9 @@ import java.util.Scanner;
 import java.util.Set;
 
 public class MainActivity extends AppCompatActivity {
+
+    String api_key = "e9b3e40b1174e2215b4d761f665ef1b5";
+    public String url_weather = "http://api.openweathermap.org/data/2.5/forecast?q=Vienna,at&APPID=" + api_key;
     private static final String LOG_TAG = MainActivity.class.getCanonicalName();
     private TextView mResultTextView;
     private Button mReloadButton;
@@ -49,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     private void loadWebResult(){
         try{
             //URL VON DEINEM VITALSERVER MIT PORT reinschreiben (z.b. 10.0.0.25:8080)
-            URL url = new URL("https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:OEFFHALTESTOGD&srsName=EPSG:4326&outputFormat=json");
+            URL url = new URL(url_weather);
 //            String content = getResponseFromHttpURL(url);
 //            mResultTextView.setText(content);
             new loadWebContentTask().execute(url);
@@ -89,22 +96,34 @@ public class MainActivity extends AppCompatActivity {
 
                 //wir brauchen kein JsonObject sondern nur ein Array weil wir nur arrays bekommen, somit nur mit dem Array arbeiten und das dann in jsonobjects zerstückeln
                 resultString = getResponseFromHttpURL(url);
-                JSONObject jsonRoot  = new JSONObject(resultString);
-                JSONArray features = jsonRoot.getJSONArray("features");
-                Set<String> stationSet = new HashSet<>();
-                for(int i =0; i<features.length(); i++){
-                    JSONObject entry = features.getJSONObject(i);
-                    JSONObject properties = entry.getJSONObject("properties");
-                    String name = properties.getString("HTXT");
-                    stationSet.add(name);
+                DateFormat json_date = new SimpleDateFormat("yyy-MM-dd_HH:mm");
+
+
+
+
+                JSONObject jsonRoot = new JSONObject(resultString);
+                JSONArray weather_array = jsonRoot.getJSONArray("list");
+                List<String> weather_list = new LinkedList<>();
+                for (int i = 0; i < weather_array.length(); i++) {
+                    JSONObject entry = weather_array.getJSONObject(i); //DATUM; ICON KÜRZEL; TEMPERATUR IN °C
+                    JSONObject main = entry.getJSONObject("main");
+                    double weather_temp = main.getDouble("temp") - 273.15;
+                    JSONObject weather = entry.getJSONObject("weather");
+                    String icon = weather.getString("icon");
+                    Date datum = json_date.parse(entry.getString("dt_txt"));
+                    String date = entry.getString("dt_txt");
+                    //weather_list.add(String.valueOf(datum));
+                    //weather_list.add(String.valueOf(weather_temp));
+                    //weather_list.add(icon);
+                    weather_list.add(date);
                 }
-                List<String> stationList = new LinkedList<>(stationSet);
-                Collections.sort(stationList);
-                return stationList;
+                return weather_list;
 
             }catch (IOException ex){
                 Log.e(LOG_TAG, "IOException", ex);
             }catch(JSONException ex){
+                Log.e(LOG_TAG, "JSONException", ex);
+            } catch (ParseException ex) {
                 Log.e(LOG_TAG, "JSONException", ex);
             }
             return null;
@@ -114,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(List<String> result) {
             super.onPostExecute(result);
             if(result== null || result.size() ==0)
-                Toast.makeText(MainActivity.this, "An error occurred.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "LEER.", Toast.LENGTH_SHORT).show();
             else
                 mResultTextView.setText(TextUtils.join("\n", result));
         }

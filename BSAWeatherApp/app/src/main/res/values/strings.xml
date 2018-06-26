@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">BSA Wetter App</string>
+
+
+    <!-- Detailansicht -->
+
+    <string name="forecast">Wettervorhersage für</string>
+    <string name="date">Datum: </string>
+    <string name="temperature">Temperatur: </string>
+    <string name="airPressure">Luftdruck: </string>
+    <string name="humidity">Luftfeuchte: </string>
+    <string name="cloud">Wolkendecke: </string>
+    <string name="windV">Windgeschwindigkeit: </string>
+    <string name="windDirection">Windrichtung: </string>
+    <string name="rain">Regen (letzten 3h): </string>
+    <string name="snow">Schnee (letzten 3h): </string>
+
+
+    <!--WETTERDATEN-->
+    <!--THUNDERSTORM GROUP 2XX-->
+    <string name="condition200">Gewitter mit leichten Regen</string>
+    <string name="condition201">Gewitter mit Regen</string>
+    <string name="condition202">Gewitter mit starken Regen</string>
+    <string name="condition210">leichtes Gewitter</string>
+    <string name="condition211">Gewitter</string>
+    <string name="condition212">starkes Gewitter</string>
+    <string name="condition221">zottiges Gewitter</string>
+    <string name="condition230">Gewitter mit leichten Nieselregen</string>
+    <string name="condition231">Gewitter mit Nieselregen</string>
+    <string name="condition232">Gewitter mit starken Nieselregen</string>
+    <!--DRIZZLE GROUP 3XX-->
+    <string name="condition300">leichter intensiver Nieselregen</string>
+    <string name="condition301">Nieselregen</string>
+    <string name="condition302">starker intensiver Nieselregen</string>
+    <string name="condition310">leichter Nieselregen</string>
+    <string name="condition311">Nieselregen</string>
+    <string name="condition312">intensiver Nieselregen</string>
+    <string name="condition313">starker Nieselregen</string>
+    <string name="condition314">starke Regenschauer</string>
+    <string name="condition321">Nieselregenschauer</string>
+    <!--RAIN GROUP 5XX-->
+    <string name="condition500">leichter Regen</string>
+    <string name="condition501">Regen</string>
+    <string name="condition502">starker intensiver Regen</string>
+    <string name="condition503">sehr starker Regen</string>
+    <string name="condition504">extremer Regen</string>
+    <string name="condition511">kalter Regen</string>
+    <string name="condition520">leichte Regenschauer</string>
+    <string name="condition521">Regenschauer</string>
+    <string name="condition522">Starke Regenstürme</string>
+    <string name="condition531">zottige Regenschauer</string>
+    <!--SNOW GROUP 6XX-->
+    <string name="condition600">leichter Schnee</string>
+    <string name="condition601">Schnee</string>
+    <string name="condition602">Starker Schnee</string>
+    <string name="condition611">Schneeregen</string>
+    <string name="condition612">Schneeregenschauer</string>
+    <string name="condition615">leichter Regen und Schnee</string>
+    <string name="condition616">Regen und Schnee</string>
+    <string name="condition620">leichter Schneesturm</string>
+    <string name="condition621">Schneesturm</string>
+    <string name="condition622">Starker Schneesturm</string>
+    <!--ATMOSPHERE GROUP 7XX-->
+    <string name="condition701">Nebel</string>
+    <string name="condition711">Rauch</string>
+    <string name="condition721">Dunst</string>
+    <string name="condition731">Sandböen</string>
+    <string name="condition741">Nebel</string>
+    <string name="condition751">Sand</string>
+    <string name="condition761">Staub</string>
+    <string name="condition762">Vulkanasche</string>
+    <string name="condition771">Böen</string>
+    <string name="condition781">Tornado</string>
+    <!--CLEAR 800-->
+    <string name="condition800">Klar</string>
+    <!--CLOUDS 80X-->
+    <string name="condition801">leicht bewölkt</string>
+    <string name="condition802">aufgelockert bewölkt</string>
+    <string name="condition803">gelockert bewölkt</string>
+    <string name="condition804">stark bewölkt</string>
+
+    <!-- EINSTELLUNGEN -->
+
+    <string name="settings">Einstellungen</string>
+    <string name="neuladen">Neu Laden</string>
+    <!--Einheiten-->
+    <string name="settings_title">Einheiten</string>
+    <string name="settings_key">metric_on</string>
+    <string name="settings_summary_on">Metrisches System</string>
+    <string name="settings_summary_off">Imperiales System</string>
+
+    <!--Ort-->
+    <string name="pref_location">Ort</string>
+    <string name="pref_key">location_key</string>
+    <string name="pref_location_change">Ort</string>
+    <string name="pref_location_default">Wien</string>
+    <string name="pref_summary">Ort ändern</string>
+    <string name="todo">TODO</string>
+
+
+</resources>
